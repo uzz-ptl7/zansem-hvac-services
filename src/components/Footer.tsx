@@ -160,11 +160,19 @@ const Footer = () => {
         <div className="border-t border-white/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-white/60">
-              © 2024 Zansem Services. All rights reserved.
+              © 2025 Zansem Services. All rights reserved.
             </div>
-            <div className="text-sm text-white/60">
-              Professional HVAC services in Kigali, Rwanda
-            </div>
+            <p className="text-gray-400 text-sm">
+              Made with ❤️ in Rwanda by the{" "}
+              <a 
+                href="https://www.sitecraftersz.co/" 
+                className="underline hover:text-white transition-colors duration-500" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Sitecrafters Team
+              </a>
+            </p>
           </div>
         </div>
       </div>

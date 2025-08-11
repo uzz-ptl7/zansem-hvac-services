@@ -219,27 +219,31 @@ Message: ${formData.message}`;
                 </div>
               </CardContent>
             </Card>
-
-            {/* Map */}
-            <Card variant="elevated" className="p-8">
-              <CardHeader className="px-0 pt-0">
-                <CardTitle className="text-2xl mb-6">Find Us</CardTitle>
-              </CardHeader>
-              <CardContent className="px-0">
-                <div className="aspect-video w-full bg-frost-grey rounded-lg flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-12 h-12 text-primary mx-auto mb-4" />
-                    <h3 className="text-lg font-semibold text-foreground mb-2">Kimironko Sector</h3>
-                    <p className="text-muted-foreground">KG 44 St, Kigali, Rwanda</p>
-                  </div>
-                </div>
-                <p className="text-sm text-muted-foreground mt-4 text-center">
-                  Serving all areas of Kigali and surrounding regions
-                </p>
-              </CardContent>
-            </Card>
           </div>
         </div>
+
+        {/* Map */}
+        <Card variant="elevated" className="p-8">
+          <CardHeader className="px-0 pt-0">
+            <CardTitle className="text-2xl mb-6">Find Us</CardTitle>
+          </CardHeader>
+          <CardContent className="px-0">
+            <div className="w-full bg-frost-grey rounded-lg flex items-center justify-center overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.527858391954!2d30.1269961!3d-1.9415268000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca75ab16491c5%3A0xbd3be96cceda9d5c!2szansem%20Services!5e0!3m2!1sen!2srw!4v1754933303978!5m2!1sen!2srw"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <p className="text-sm text-muted-foreground mt-4 text-center">
+              Serving all areas of Kigali and surrounding regions
+            </p>
+          </CardContent>
+        </Card>
 
         {/* Emergency Contact */}
         <Card variant="elevated" className="mt-16 p-8 text-center bg-gradient-cool text-white">
