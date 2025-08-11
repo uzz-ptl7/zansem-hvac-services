@@ -26,7 +26,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -52,6 +53,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				'cool-blue': 'hsl(var(--cool-blue))',
+				'ice-blue': 'hsl(var(--ice-blue))',
+				'frost-grey': 'hsl(var(--frost-grey))',
+				'steel-grey': 'hsl(var(--steel-grey))',
+				'deep-blue': 'hsl(var(--deep-blue))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +68,22 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-cool': 'var(--gradient-cool)',
+				'gradient-frost': 'var(--gradient-frost)',
+				'gradient-hero': 'var(--gradient-hero)',
+			},
+			boxShadow: {
+				'cool': 'var(--shadow-cool)',
+				'soft': 'var(--shadow-soft)',
+				'card': 'var(--shadow-card)',
+			},
+			transitionTimingFunction: {
+				'smooth': 'var(--transition-smooth)',
+			},
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
